@@ -29,11 +29,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :production do
+  gem 'unicorn'
   gem 'pg'
   gem 'rails_12factor'
 end
 
 group :development do
+  gem 'thin'
   gem 'sqlite3'
 end
 
